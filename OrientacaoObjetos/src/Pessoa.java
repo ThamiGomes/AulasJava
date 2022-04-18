@@ -9,25 +9,25 @@ public class Pessoa {
     	 
      }
      boolean dar(int numfigurinhas, Pessoa pessoa) {
-    	//boolean msg:
+    	//boolean retorno:
     	 
     	 this.numfigurinhas -= numfigurinhas;
     	 
     	 if(this.numfigurinhas < numfigurinhas) {
     	 System.out.println("O número de figurinhas que voce tem é menor que a quantidade que voce quer dar");
-    	// msg = false;
+    	// retorno = false;
     	 return false;
     	 
     	 }else{
     		 this.numfigurinhas -= numfigurinhas;
     		 pessoa.receber(numfigurinhas);
-    		// msg = true;
+    		// retorno = true;
     		 return true;
     		 
     	 }
     	 
     	 
-    //	return msg;
+    //	return retorno;
     	 
     	 
     	 

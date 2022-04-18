@@ -21,9 +21,9 @@ public class Main {
 		System.out.println(pessoa2.nome);
 		System.out.println(pessoa2.numfigurinhas);
 			
-		boolean msg = pessoa1.dar(1, pessoa2);
+		boolean retorno = pessoa1.dar(1, pessoa2);
 		
-		if(msg==true)
+		if(retorno==true)
 		System.out.println(pessoa1.nome);
 		System.out.println(pessoa1.numfigurinhas);
 		
