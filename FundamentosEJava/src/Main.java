@@ -1,22 +1,22 @@
 
 
 import java.util.Scanner;
-public class main {
+public class Main {
 
 	public static void main(String[] args) {
 //
-//		int x = 100;
-//		double y = 200;
-//		int a = 0;
-//		double b = 0;
-//		short z = (short) 100000;
-//		System.out.println(z);
+		int x = 100;
+	double y = 200;
+		int a = 0;
+		double b = 0;
+	short z = (short) 10000;
+		System.out.println(z);
 //
 //		byte t = 100;
 //		System.out.println(t);
 //
-//		a = (int) y;
-//		b = x;
+		a = (int) y;
+	b = x;
 //
 //		System.out.println(a);
 //		System.out.println(b);
@@ -24,13 +24,13 @@ public class main {
 //		int idadePessoa = 25;
 //
 //		if (idadePessoa < 20) {
-//			System.out.println("Voce nao pode beber");
+//			System.out.println("Você não pode beber");
 //		} else if (idadePessoa < 80) {
 //			System.out.println("Bora tomar uma");
 //		} else {
 //			System.out.println("Quanto é a sua aposentadoria?");
 //		}
-//		System.out.println("Voce tem " + idadePessoa);
+//		System.out.println("Você tem " + idadePessoa);
 		
 		//System.out.println(-------------------------------------------);
 
@@ -38,19 +38,19 @@ public class main {
 //
 //		switch (num) {
 //		case 1:
-//			System.out.println("Lunes " );
+//			System.out.println("Segunda " );
 //			break;
 //		case 2:
-//			System.out.println("Martes" );
+//			System.out.println("Terça" );
 //			break;
 //		case 3:
-//			System.out.println("Miercoles " );
+//			System.out.println("Quarta" );
 //			break;
 //		case 4:
-//			System.out.println("Jueves"  );
+//			System.out.println("Quinta"  );
 //			break;
 //		case 5:
-//			System.out.println("Viernes " );
+//			System.out.println("Sexta" );
 //			break;
 //		case 6:
 //			System.out.println("Sabado " );
@@ -59,7 +59,7 @@ public class main {
 //			System.out.println("Domingo" );
 //			break;
 //			default:
-//				System.out.println("Ese numero no representa un dia de la semana");
+//				System.out.println("Esse número não representa um dia da semana");
 
 		// }
 		//System.out.println(------------------------------------------);
@@ -79,7 +79,7 @@ public class main {
 //	}while(x<10);
 //	
 Scanner ler = new Scanner(System.in);
-System.out.println("CUAL NUMERO QUIERE?");
+System.out.println("Qual número você procura?");
 
 
 int y;
@@ -87,7 +87,7 @@ int y;
 y = ler.nextInt();
 
 	for(int x=0;  x<11; x++) {
-		System.out.println(y + "x" + x + "= " + x*y);
+		System.out.println(y + "x" + x + "= " + x * y);
 		
 }
 }
