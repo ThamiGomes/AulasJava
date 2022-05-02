@@ -33,7 +33,7 @@ public class ContaBancaria {
 		
 	}
 
-	public ContaBancaria() {
+	{
 		
 	}
 }
