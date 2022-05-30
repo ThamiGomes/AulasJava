@@ -6,7 +6,7 @@ public class Sabonete {
 	 
 	@Override
 	public String toString() {
-		return "Sabonete: cheiro=" + cheiro + ", cor=" + cor + "\n";	
+		return "Sabonete: cheiro=" + cheiro + ", cor=" + cor ;	
 
 		
 	}
