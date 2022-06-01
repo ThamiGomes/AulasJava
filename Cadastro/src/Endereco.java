@@ -2,15 +2,21 @@
 public class Endereco {
 
 	String Rua ;
-	int n;
+	int numero;
 	String Bairro;
 	 
-	@Override
-	public String toString() {
-		return "Endereco [Rua=" + Rua + ", n=" + n + ", Bairro=" + Bairro + "]";
+	public Endereco(String[] arrayLinha) {
+		
+		String[] arrayRua = arrayLinha[3].split("=");
+		this.Rua = arrayRua[1].trim();
 		
 		
 	}
+
+	@Override
+	public String toString() {
+		return "Endereco [Rua=" + Rua + ", numero=" + numero + ", Bairro=" + Bairro + "]";
+	}		
 
 	public String getRua() {
 		return Rua;
@@ -20,12 +26,12 @@ public class Endereco {
 		Rua = rua;
 	}
 
-	public int getN() {
-		return n;
+	public int getNumero() {
+		return numero;
 	}
 
-	public void setN(int n) {
-		this.n = n;
+	public void setNumero(int numero) {
+		this.numero = numero;
 	}
 
 	public String getBairro() {

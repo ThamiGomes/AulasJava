@@ -2,8 +2,10 @@
 public enum Sexo {
 
 	FEMININO(1),
-	MASCULINO(0);
-	
+	MASCULINO(2);
+  	   
+   
+
 	private int num;
 
 	
@@ -15,6 +17,10 @@ public enum Sexo {
 	private Sexo(int num) {
 		this.num = num;
 	}
-	
+
+
+	public void setNum(int num) {
+		this.num = num;
+	}
 	
 }
