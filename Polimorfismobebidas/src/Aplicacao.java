@@ -1,15 +1,15 @@
 
 public class Aplicacao {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) { //Utlização classe main para executar programa
 		
-		Preparador preparador = new Preparador(); // Instanciando objeto Preparador
+		Preparador preparador = new Preparador(); // Instanciando objeto da classe Preparador 
 		
-		LeiteQuente leiteQuente = new LeiteQuente(); // Intanciando objeto LeiteQuente
-		preparador.prepararBebida(leiteQuente);  //Chamando método preparar bebida LeiteQuente
+		LeiteQuente leiteQuente = new LeiteQuente(); // Intanciando objeto da classe LeiteQuente
+		preparador.prepararBebida(leiteQuente);  //Chamando método prepararBebida da classe "preparador" para preparar LeiteQuente 
 		
-		Refrigerante refrigerante = new Refrigerante(); //Instanciando objeto Refrigerante
-		preparador.prepararBebida(refrigerante); //Chamando método preparar bebida
+		Refrigerante refrigerante = new Refrigerante(); //Instanciando objeto da classe Refrigerante
+		preparador.prepararBebida(refrigerante); //Chamando método prepararBebida da classe "preparador" para preparar Refrigerante
 	}
 
 }
