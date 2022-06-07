@@ -5,25 +5,26 @@ public class Aplicacao {
 	public static void main(String[] args) {
 		
 	
-		Scanner scanner  = new Scanner(System.in);
+		Scanner scanner  = new Scanner(System.in); // usando o scanner para receber informaçoes do usuario
 		
-		Matematica matematica = new Matematica();
+		Matematica matematica = new Matematica(); // instanciando objeto
 		
-		System.out.println("Somar dois n�meros");
-		System.out.println("Digite o primeiro n�mero");
-		int x = scanner.nextInt();
+		//Syso para mostrar informaçoes na tela
+		System.out.println("Somar dois números");
+		System.out.println("Digite o primeiro número");
+		int x = scanner.nextInt(); // o que o Usuario digitar ira ser salvo nessa variavel
 		
-		System.out.println("Digite o segundo n�mero");
+		System.out.println("Digite o segundo número");
 		int y = scanner.nextInt();
 		
-		int soma = matematica.somar(x, y);
-		System.out.println("O resultado �" + soma + "!!!");
+		int soma = matematica.somar(x, y);  //Variável que irá salvar a soma dos dois valores inteiros
+		System.out.println("O resultado é" + soma + "!!!"); // mostrar na tela o resultado da soma
 		
-		soma = matematica.somar(x, y, 5);
-		System.out.println("O resultado �" + soma + "!!!");
+		soma = matematica.somar(x, y, 5); //Variável que irá salvar a soma de três valores inteiros
+		System.out.println("O resultado é" + soma + "!!!"); // mostrar na tela o resultado da soma
 		
-		double soma2 = matematica.somar(x, y);
-		System.out.println("O resultado �" + soma2 + "!!!");
+		double soma2 = matematica.somar(x, y); //Variável que irá salvar a soma dos dois valores double
+		System.out.println("O resultado é" + soma2 + "!!!"); // mostrar na tela o resultado da soma
 				
 	}
 
