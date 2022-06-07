@@ -7,7 +7,7 @@ public enum Sexo {
   	   
    
 
-	private int num; //variavel privada NUm
+	private int num; //
 
 	//gerando getters and setters Num
 	public int getNum() {
