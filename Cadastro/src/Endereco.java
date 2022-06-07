@@ -1,23 +1,25 @@
 
 public class Endereco {
-
+   //atributos da classe endereco	
 	String Rua ;
 	int numero;
 	String Bairro;
 	 
+	
 	public Endereco(String[] arrayLinha) {
 		
-		String[] arrayRua = arrayLinha[3].split("=");
-		this.Rua = arrayRua[1].trim();
+		String[] arrayRua = arrayLinha[3].split("="); //o split quebra 
+		this.Rua = arrayRua[1].trim(); //o trim tira os espaços 
 		
 		
 	}
-
+//gerado toString para retornar todos os atributos do usuario
 	@Override
 	public String toString() {
 		return "Endereco [Rua=" + Rua + ", numero=" + numero + ", Bairro=" + Bairro + "]";
 	}		
-
+	}
+//gerado método getters and setters
 	public String getRua() {
 		return Rua;
 	}
