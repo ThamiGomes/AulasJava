@@ -1,10 +1,10 @@
 
-public class Apartamento implements ItemCaro {
+public class Apartamento implements ItemCaro { //classe Apartamento que implementa ItemCaro
 
-	@Override
+	@Override //sobreescrita do atributo da interface ItemCaro
 	public double getPreco() {
 		// TODO Auto-generated method stub
-		return 250000;
+		return 250000; //retorno do valor
 	}
 
 	
