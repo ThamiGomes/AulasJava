@@ -1,12 +1,14 @@
 
 public abstract class Item {
 
+	//atributos privados
 	private int posX;
 	private int posY;
 	
 	public abstract void pegar() ;
 		//Todo mundo que extende item tem que implementar o abstrato.
 
+	//gerando getters and setters
 	public int getPosX() {
 		return posX;
 	}
