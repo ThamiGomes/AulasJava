@@ -1,10 +1,10 @@
 
 public class Usuario {
 
-	String nome;
+	String nome; //atributos do Usuário
 	int idade;
-	Sexo sexo;
-	Endereco endereco;
+	Sexo sexo; //atributo endereço que vem da classe endereço
+	Endereco endereco;  //sexo que vem do Enum Sexo
 		
 
 	@Override
@@ -12,6 +12,7 @@ public class Usuario {
 		return "Usuario [nome=" + nome + ", idade=" + idade + ", sexo=" + sexo + ", endereco=" + endereco + "]";
 	}
 
+	//gerando getters and setters
 	public Sexo getSexo() {
 		return sexo;
 	}
@@ -44,18 +45,18 @@ public class Usuario {
 		this.endereco = endereco;
 	}
 	
-	public Usuario(String linha) {
+	public Usuario(String linha) {  //construtor com o parâmetro de String
 		
-		String[] arrayLinha = linha.split(",");
-		String[] arrayNome = arrayLinha[0].split("=");		
+		String[] arrayLinha = linha.split(","); //split usado para quebrar o toString quando aparecer a ","
+		String[] arrayNome = arrayLinha[0].split("="); //cria uma nova variável para pegar a posição 0 da arrayLinha e quebrar quando aparecer o =	
 		this.nome = arrayNome[1].trim();
 		
 		String[] arrayIdade = arrayLinha[1].split("=");
-		this.idade = Integer.parseInt(arraylinha[1].trim());
+		this.idade = Integer.parseInt(arraylinha[1].trim()); //converte a string da Array em inteiro com o Integer.parseInt
 		
-		this.sexo = Sexo.valueOf(arraySexo[2].trim());
+		this.sexo = Sexo.valueOf(arraySexo[2].trim()); //converte a string da Array em Enum com o valueOf
 		
-		Endereco endereco = new Endereco(arrayLinha);
+		Endereco endereco = new Endereco(arrayLinha); //intanciando um novo objeto da classe Endereco que recebe a (arrayLinha)
 		
 		this.endereco = endereco;
 		
