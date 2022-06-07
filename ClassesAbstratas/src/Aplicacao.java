@@ -3,15 +3,16 @@ public class Aplicacao extends Item {
 
 	public static void main(String[] args) {
 	
- // Item item = new Item ();
-		Item item = new Cogumelo();
-		item.pegar();
+ // Item item = new Item (); //não é possivel criar uma instância de uma classe abtrata
 		
-		item = new Moeda();
-	    item.pegar();
+		Item item = new Cogumelo(); //instanciando um objeto e criando uma variavel
+		item.pegar(); //realizando açao pela classe cogumelo
+		
+		item = new Moeda(); // a variavel ja está criada
+	    item.pegar(); //realizando açao pela classe moeda
 		
 		item = new Diamante();
-		item.pegar();
+		item.pegar(); //realizando açao pela classe diamante
 		
 		
 	}
