@@ -11,18 +11,18 @@ public class Main {
 	public static void main(String[] args) throws FileNotFoundException, IOException {
 		
 		
-		String Leitura;
-		Scanner scanner  = new Scanner(System.in);
+		String Leitura; //variavel Leitura do tipo string
+		Scanner scanner  = new Scanner(System.in); // instanciando e criando um objeto Scanner
 		
-		System.out.println("Digite uma frase");
-		Leitura = scanner.nextLine();
+		System.out.println("Digite uma frase"); //Syso para imprimir informaçoes na tela
+		Leitura = scanner.nextLine(); //salvando na variável Leitura o que o usuário digitar
 		
 		try(BufferedWriter escrever = new BufferedWriter(new FileWriter("entrada.txt"))){			   
-			escrever.write(Leitura);
+			escrever.write(Leitura); //usando BufferedWriter para escrever texto no arquivo de escrita(entrada.txt)
 		}
 	
 		
-		try(BufferedReader reader = new BufferedReader (new FileReader("entrada.txt"))){
+		try(BufferedReader reader = new BufferedReader (new FileReader("entrada.txt"))){ //usando BufferedReader para ler texto do arquivo (entrada.txt)
 		   String line;
 		   String string = "";
 		   
