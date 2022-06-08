@@ -1,16 +1,18 @@
 import java.util.Objects;
 
-public class Cliente {
+public class Cliente {  //classe pública Cliente
 
+	//atributos privados da classe Cliente
 	private String nome;
 	private int cpf;
 	private int numConta;
 	
+	//construtor com o parâmetro vazio
 	public Cliente() {
 		
 		
 	}
-
+// gerando getters and setters
 	public String getNome() {
 		return nome;
 	}
@@ -35,16 +37,19 @@ public class Cliente {
 		this.numConta = numConta;
 	}
 
+	//toString para retornar os atributos
 	@Override
 	public String toString() {
-		return "Cliente \n Nome=" + nome + ", \nCPF=" + cpf + ", \nN�mero da Conta=" + numConta + " \n*************************]";
+		return "Cliente \n Nome=" + nome + ", \nCPF=" + cpf + ", \nNúmero da Conta=" + numConta + " \n*************************]";
 	}
 
+	//hashCode que compara os conteúdos dos objetos
 	@Override
 	public int hashCode() {
 		return Objects.hash(cpf, nome, numConta);
 	}
 
+	//método equals serve para comparar objetos
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
