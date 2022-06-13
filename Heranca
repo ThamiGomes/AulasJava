@@ -1,0 +1,118 @@
+public class Aplicacao {
+
+	public static void main(String[] args) { //classe-mãe para executar o programa
+
+		
+		Veiculo veiculo = new Veiculo();  //instanciando objeto da classe Veiculo
+	
+		veiculo.setMarca("Honda");   //utilizando set para atribuir um valor na variável
+		veiculo.setModelo("City");
+		veiculo.setAno(2013);
+
+		
+		veiculo.imprimir();  //utilizando o método no objeto
+		veiculo.buzinar();
+		System.out.println();  //deixando uma linha em branco
+
+		
+		// agora é um novo objeto, então tem que atribuir as caracteríticas novamente
+		
+		Carro carro = new Carro();   //novo objeto que vem da classe Carro
+		carro.setMarca("Volvo");  //utilizando set para atribuir um valor na variável
+		carro.setModelo("XC 60");
+		carro.setAno(2022);
+		carro.setQuatroPortas(true); //usando o set para definir se o carro tem 4 portas(true) ou não(false)
+		
+		carro.imprimir();  //utilizando o método no objeto
+		carro.buzinar();		
+		System.out.println();  //deixando uma linha em branco
+
+
+		Caminhao caminhao = new Caminhao();  //novo objeto que vem da classe Caminhão
+		caminhao.setMarca("Mercedes");  //utilizando set para atribuir um valor na variável
+		caminhao.setModelo("568");
+		caminhao.setAno(2022);
+		
+		caminhao.imprimir();  //utilizando o método no objeto
+		caminhao.buzinar();
+		System.out.println();  //deixando uma linha em branco
+		
+		Moto moto = new Moto();  //novo objeto que vem da classe Moto
+		moto.setMarca("Motooo");  //utilizando set para atribuir um valor na variável
+		moto.setModelo("777");
+		moto.setAno(2022);
+		
+		moto.imprimir(); //utilizando o método no objeto
+		moto.buzinar();
+		moto.empinar();  //esse é o método específico da moto
+		System.out.println();//deixando uma linha em branco
+
+
+	}
+
+}
+public class Caminhao extends Veiculo{ //classe-filha que estende da classe-mãe Veículo
+
+	//a buzina do caminhão será diferente, então não vai precisar do super
+	@Override  
+	public void buzinar() {
+		System.out.println("FOOOOOOOOOOON"); //mudando a buzina do caminhão
+	}
+	
+	
+	
+	
+}
+
+public class Veiculo {  //classe-mãe Veículo
+
+	//atributos com o modificador protected
+	protected String marca;  //permite acesso às classes filhas, mas proíbe a qualquer outro acesso externo.
+	protected String modelo; //já o private proíbe qualquer acesso externo à própria classe, inclusive das classes filhas.
+	protected int ano;
+	private String nome;
+
+	public void buzinar() {  //método que todas as classes-filhas devem ter
+		System.out.println("BI BI");
+	}
+
+	public void imprimir() {   //método que todas as classes-filhas devem ter
+		System.out.println("Marca: "+ marca);
+		System.out.println("Modelo: " + modelo);
+		System.out.println("Ano " + ano);
+	}
+	
+	//métodos getters e setters para acessar atributos
+	public String getMarca() {
+		return marca;
+	}
+
+	public void setMarca(String marca) {
+		this.marca = marca;
+	}
+
+	public String getModelo() {
+		return modelo;
+	}
+
+	public void setModelo(String modelo) {
+		this.modelo = modelo;
+	}
+
+	public int getAno() {
+		return ano;
+	}
+
+	public void setAno(int ano) {
+		this.ano = ano;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+}
