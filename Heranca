@@ -1,21 +1,21 @@
 public class Aplicacao {
 
-	public static void main(String[] args) { //classe-mãe para executar o programa
+	public static void main(String[] args) { //classe-mãe 
 
 		
 		Veiculo veiculo = new Veiculo();  //instanciando objeto da classe Veiculo
 	
-		veiculo.setMarca("Honda");   //utilizando set para atribuir um valor na variável
+		veiculo.setMarca("Honda");   //utilizando o set para atribuir um valor na variável
 		veiculo.setModelo("City");
 		veiculo.setAno(2013);
 
 		
 		veiculo.imprimir();  //utilizando o método no objeto
 		veiculo.buzinar();
-		System.out.println();  //deixando uma linha em branco
+		System.out.println();  //espaço vazio
 
 		
-		// agora é um novo objeto, então tem que atribuir as caracteríticas novamente
+		// agora é um novo objeto, então terá que atribuir as caracteríticas novamente
 		
 		Carro carro = new Carro();   //novo objeto que vem da classe Carro
 		carro.setMarca("Volvo");  //utilizando set para atribuir um valor na variável
@@ -23,9 +23,9 @@ public class Aplicacao {
 		carro.setAno(2022);
 		carro.setQuatroPortas(true); //usando o set para definir se o carro tem 4 portas(true) ou não(false)
 		
-		carro.imprimir();  //utilizando o método no objeto
+		carro.imprimir();  
 		carro.buzinar();		
-		System.out.println();  //deixando uma linha em branco
+		System.out.println();  
 
 
 		Caminhao caminhao = new Caminhao();  //novo objeto que vem da classe Caminhão
@@ -45,7 +45,7 @@ public class Aplicacao {
 		moto.imprimir(); //utilizando o método no objeto
 		moto.buzinar();
 		moto.empinar();  //esse é o método específico da moto
-		System.out.println();//deixando uma linha em branco
+		System.out.println();espaço em branco
 
 
 	}
@@ -53,10 +53,10 @@ public class Aplicacao {
 }
 public class Caminhao extends Veiculo{ //classe-filha que estende da classe-mãe Veículo
 
-	//a buzina do caminhão será diferente, então não vai precisar do super
+	//a buzina do caminhão será diferente, então não irá precisar do super
 	@Override  
 	public void buzinar() {
-		System.out.println("FOOOOOOOOOOON"); //mudando a buzina do caminhão
+		System.out.println("FOOOOOOOOOOON"); //imprimindo na tela o som
 	}
 	
 	
@@ -82,7 +82,7 @@ public class Veiculo {  //classe-mãe Veículo
 		System.out.println("Ano " + ano);
 	}
 	
-	//métodos getters e setters para acessar atributos
+	// gerando métodos and getters e setters para acessar atributos
 	public String getMarca() {
 		return marca;
 	}
