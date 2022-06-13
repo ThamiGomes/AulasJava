@@ -11,7 +11,7 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		Media notas = new Media(); // criando a variável e instanciando o objeto notas
+		Media notas = new Media(); // criando a variável e instanciando  objeto 
 		notas.setNota1(8.5);  //utilizando o set para atribuir um valor a variável
 		notas.setNota2(6.4);
 		notas.setNota2(9.5);
@@ -35,7 +35,7 @@ public class Media {
 
 	}
 
-	//métodos getters e setters para acessar os atributos privados
+	//gerando métodos getters and setters para acessar os atributos privados
 	public Double getNota1() {
 		return nota1;
 	}
