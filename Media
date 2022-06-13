@@ -1,0 +1,69 @@
+public class Aluno {
+	
+	//atributos da classe Aluno
+	Nota nota1;
+	Nota nota2;
+	Nota nota3;
+	Double media;
+	
+}
+public class Main {
+
+	public static void main(String[] args) {
+
+		Media notas = new Media(); // criando a variável e instanciando o objeto notas
+		notas.setNota1(8.5);  //utilizando o set para atribuir um valor a variável
+		notas.setNota2(6.4);
+		notas.setNota2(9.5);
+
+		notas.imprimir(); //utilizando o método no objeto criado
+		
+	}
+
+}
+public class Media {
+
+	//atributos privados
+	private Double nota1;
+	private Double nota2;
+	private Double nota3;
+
+	public void imprimir() {  //método imprimir
+	double notafinal = (this.nota1 * 3 + this.nota2 * 2 + this.nota3 * 5)/10;
+	//fórmula da média que será salva na variável notafinal
+	System.out.println(notafinal);  //mostrando na tela a nota final
+
+	}
+
+	//métodos getters e setters para acessar os atributos privados
+	public Double getNota1() {
+		return nota1;
+	}
+
+	public void setNota1(Double nota1) {
+		this.nota1 = nota1;
+	}
+
+	public Double getNota2() {
+		return nota2;
+	}
+
+	public void setNota2(Double nota2) {
+		this.nota2 = nota2;
+	}
+
+	public Double getNota3() {
+		return nota3;
+	}
+
+	public void setNota3(Double nota3) {
+		this.nota3 = nota3;
+	}
+
+}
+public class Nota {
+	
+	//atributo da classe Nota
+	Int peso;
+
+}    
