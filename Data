@@ -1,10 +1,7 @@
 public class Data { // classe pública Data
 	public static final int FORMATO_12H = 1;
 	public static final int FORMATO_24H = 2;
-	// final em Java serve para atribuir valores constantes, ou seja,
-	// que a partir da sua declaração, seus valores não poderão mais serem
-	// alterados,
-	// mesmo com a visibilidade pública
+	// final em Java serve para atribuir valores constantes, ou seja, que a partir da sua declaração, seus valores não irão poder ser altrados, mesmo com a visibilidade pública
 
 	// atributos da classe
 	private int dia;
@@ -20,7 +17,7 @@ public class Data { // classe pública Data
 		this.mes = mes;
 		this.ano = ano;
 	}
-	// Construtor completo, que recebe informações de data e horário
+	// Construtor que recebe informações de data e horário
 
 	public Data(int dia, int mes, int ano, int hora, int min, int seg) {
 		// Chama o outro construtor da classe
@@ -30,8 +27,8 @@ public class Data { // classe pública Data
 		this.seg = seg;
 	}
 
-	// Imprime a data/hora formatada (de acordo com o formato especificado)
-	public void imprimir(int formato) {
+	// Imprime a data e hora formatada
+	
 	
 	
 	
@@ -39,19 +36,16 @@ public class Data { // classe pública Data
 		String data = dia + "/" + mes + "/" + ano;
 
 		if (hora == -1) {
-			// Se hora for -1, significa que os dados de horário não foram passado no
-			// construtor.
-			// Então exibe só a data
-			System.out.println(data); // imprime a data
+			// Se hora for -1, significa que os dados de horário não foram passado no construtor. Então irá exibir só a data
+			System.out.println(data); // imprime a data na tela
 
 		} else { // nesse caso a hora foi passada no construtor, então ela é diferente de -1
-			// Monta parte da string da horário (deixa a hora de fora por enquanto)
+			// Monta parte da string da horário
 
-			String horario = ":" + min + ":" + seg; // nova variável que guarda o minuto e segundo
+			String horario = ":" + min + ":" + seg; //  variável que guarda o minuto e o segundo
 
 			if (formato == FORMATO_24H) { // FORMATAÇÃO DA HORA
-				// Se o formato for 24h, concatena a hora no início da string (o atributo já foi
-				// fornecido no formato 24h)
+				// Se o formato for 24h, concatena a hora no início da string (o atributo já foi fornecido no formato 24h)
 
 				horario = hora + horario;
 			} else {
@@ -60,13 +54,11 @@ public class Data { // classe pública Data
 					horario = 12 + horario;
 					horario += " AM";
 				} else if (hora >= 12) {
-					// Se hora for maior ou igual a 12, é preciso subtrair 12 da hora para obter
-					// a hora no formato 12h, e concatena o "PM" no fim
+					// Se hora for maior ou igual a 12, é preciso subtrair 12 da hora para obter a hora no formato 12h, e concatena o "PM" no fim
 					horario = (hora - 12) + horario;
 					horario += " PM";
 				} else {
-					// Se a hora for menor que 12, simplesmente utiliza a própria hora e concatena
-					// o "AM" no fim
+					// Se a hora for menor que 12, simplesmente utiliza a própria hora e concatenao "AM" no fim
 					horario = hora + horario;
 					horario += " AM";
 
@@ -79,7 +71,7 @@ public class Data { // classe pública Data
 		}
 	}
 
-//Métodos getters para acessar os atributos privados da classe
+// gerando métodos and getters para acessar os atributos privados da classe
 	public int getDia() {
 		return dia;
 	}
