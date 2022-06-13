@@ -1,5 +1,6 @@
-public class Conta { //classe pública
-	String nome; //atributos da classe
+public class Conta { //classe pública Conta
+//atributos da classe
+	String nome; 
 	double valor;
 
 	//toString para retornar os atributos
@@ -26,7 +27,7 @@ public class main {
 //		List lista = new ArrayList(); // como não temos essa classe no projeto, precisa importar
 //		// lista é uma variável do tipo list
 //
-//		lista.add("abc"); // add recebe Object, ou seja, qualquer coisa
+//		lista.add("abc"); // add recebe Object
 //		lista.add(12);
 //		lista.add(true);
 //
@@ -37,8 +38,7 @@ public class main {
 //		}
 //		
 //		System.out.println();
-//		for (Object valor : lista) { // variável valor do tipo Object para receber qualquer tipo de dado
-//			//pega o valor do índice 0 e aloca na variável valor. Assim por diante.
+//		for (Object valor : lista) { // variável valor do tipo Object para receber qualquer tipo de dado, pega o valor do índice 0 e aloca na variável valor.
 //			//varre TODOS os valores que estão na lista
 //			
 //			System.out.println(valor);
@@ -65,7 +65,7 @@ public class main {
 //
 //		}
 //		System.out.println();
-//		// ADICIONANDO ITEM NA LISTA SUBSTITUINDO ALGO QUE JÁ EXISTE
+//		// adicionando algo na lista para substituir algo que ja existe
 //		
 //		lista.set(0, "ghi"); // substitui o que está no índice 0 por "ghi" 
 //		// agora o "ghi' está na posição 0, ficando no lugar de "def".
@@ -79,7 +79,7 @@ public class main {
 //		if(lista.isEmpty()) //teste para saber se a lista está vazia
 //		System.out.println("Sua lista está vazia");
 
-		Conta conta1 = new Conta("Água", 60.00); //INSTANCIANDO OBJETO COM OS ATRIBUTOS
+		Conta conta1 = new Conta("Água", 60.00); //instanciando objeto com atributos
 		Conta conta2 = new Conta("Luz", 120.00);
 
 		List<Conta> listaDeContas = new ArrayList<Conta>(); // só aceita os objetos do tipo Conta
